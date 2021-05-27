@@ -1,0 +1,305 @@
+{
+   "ECG200":{
+      "path":
+         "data/real/ECG200/"
+      ,
+      "file_extension":".tsv",
+      "csv_options":{
+         "delim_whitespace":true,
+	  "header":null
+      },
+      "normal_labels": [1],
+      "outlier_labels": [-1]
+   },
+   "ChlorineConcentration":{
+   "path":"data/real/ChlorineConcentration/",
+   "file_extension":".txt",
+   "csv_options":{
+         "delim_whitespace":true,
+	  "header":null
+      },
+      "normal_labels": [1],
+      "outlier_labels": [2,3]
+      }
+      ,
+   "GunPoint":{
+   "path":"data/real/GunPoint/",
+   "file_extension":".tsv",
+   "csv_options":{
+         "delim_whitespace":true,
+	  "header":null
+      },
+      "normal_labels": [1],
+      "outlier_labels": [2]
+      }
+            ,
+   "ECGFiveDays":{
+   "path":"data/real/ECGFiveDays/",
+   "file_extension":".tsv",
+   "csv_options":{
+         "delim_whitespace":true,
+	  "header":null
+      },
+      "normal_labels": [1],
+      "outlier_labels": [2]
+      }
+      ,
+   "Wafer":{
+   "path":"data/real/Wafer/",
+   "file_extension":".tsv",
+   "csv_options":{
+         "delim_whitespace":true,
+	  "header":null
+      },
+      "normal_labels": [1],
+      "outlier_labels": [-1]
+      },
+   "Adiac":{
+   "path":"data/real/Adiac/",
+   "file_extension":".txt",
+   "csv_options":{
+         "delim_whitespace":true,
+	  "header":null
+      },
+      "normal_labels": [9.0],
+      "outlier_labels": [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0,20.0,21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0]},
+   "ArrowHead":{
+"path":"data/real/ArrowHead/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [2],
+   "outlier_labels": [0,1]
+   },
+"Beef":{
+"path":"data/real/Beef/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [2,3,4,5]
+   },
+"BeetleFly":{
+"path":"data/real/BeetleFly/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [2]
+   },
+"BirdChicken":{
+"path":"data/real/BirdChicken/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [2]
+   },
+"CBF":{
+"path":"data/real/CBF/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [2],
+   "outlier_labels": [1,3]
+   },
+"Coffee":{
+"path":"data/real/Coffee/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [0],
+   "outlier_labels": [1]
+   }
+   ,
+"FaceFour":{
+"path":"data/real/FaceFour/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [3],
+   "outlier_labels": [1,2,4]
+   }
+   ,
+"Ham":{
+"path":"data/real/Ham/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [2]
+   }
+   ,
+"Herring":{
+"path":"data/real/Herring/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [2]
+   }
+   ,
+"Lightning2":{
+"path":"data/real/Lightning2/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [-1]
+   }
+   ,
+"Lightning7":{
+"path":"data/real/Lightning7/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [3],
+   "outlier_labels": [0,1,2,4,5,6]
+   }
+   ,
+"Meat":{
+"path":"data/real/Meat/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [2],
+   "outlier_labels": [1,3]
+   }
+   ,
+"MedicalImages":{
+"path":"data/real/MedicalImages/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [5],
+   "outlier_labels": [1,2,3,4,6,7,8,9,10]
+   }
+   ,
+"MoteStrain":{
+"path":"data/real/MoteStrain/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [2]
+   }
+   ,
+"Plane":{
+"path":"data/real/Plane/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [5],
+   "outlier_labels": [1,2,3,4,6,7]
+   }
+   ,
+"Strawberry":{
+"path":"data/real/Strawberry/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [2]
+   }
+    ,
+"ToeSegmentation1":{
+"path":"data/real/ToeSegmentation1/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [0],
+   "outlier_labels": [1]
+   }
+   ,
+"ToeSegmentation2":{
+"path":"data/real/ToeSegmentation2/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [0],
+   "outlier_labels": [1]
+   }
+     ,
+"Trace":{
+"path":"data/real/Trace/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [2,3,4]
+   }
+   ,
+"TwoLeadECG":{
+"path":"data/real/TwoLeadECG/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [2]
+   }
+
+  ,
+"Wine":{
+"path":"data/real/Wine/",
+"file_extension":".txt",
+"csv_options":{
+      "delim_whitespace":true,
+  "header":null
+   },
+   "normal_labels": [1],
+   "outlier_labels": [2]
+   },
+ "Symbols":{
+    "path":
+       "data/real/Symbols/"
+    ,
+    "file_extension":".txt",
+    "csv_options":{
+       "delim_whitespace":true,
+  "header":null
+    },
+    "normal_labels": [6],
+    "outlier_labels": [1,2,3,4,5]
+ }
+
+}
