@@ -154,6 +154,7 @@ if st.sidebar.button("Load example configuration"):
         data_set_config['outlier_classes'] = outliers
         data_set_config = pd.Series(data_set_config, name=data_set)
         session_state.configuration.append(data_set_config)
+    display_data_set_selection = display_data_sets_placeholder.multiselect("Configured data sets:", default=session_state.configuration.get_data_sets(), options=session_state.configuration.get_data_sets())
 
 
 "## 1. Transformation"
@@ -180,7 +181,6 @@ with col2:
         session_state.configuration.append(data_set_config)
         display_data_set_selection = display_data_sets_placeholder.multiselect("Configured data sets:", default=session_state.configuration.get_data_sets(), options=session_state.configuration.get_data_sets())
 
-st.dataframe(session_state.configuration.configurations)
 "## 2. Summary"
 "Use the sliders in the sidepanel to regulate the normal and outlier ratios."
 stats_df = pd.DataFrame()
