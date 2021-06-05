@@ -8,6 +8,9 @@ import re
 import unicodedata
 import os
 
+
+# Starting with a couple of functions and settings.
+
 DATASETS = ['ECG200', 'GunPoint', 'ECGFiveDays', 'Adiac', 'ArrowHead', 'Beef', 'BeetleFly', 'BirdChicken', 'CBF', 'Coffee', 'FaceFour', 'Ham', 'Herring', 'Lightning2', 'Lightning7', 'Meat', 'MedicalImages', 'MoteStrain', \
             'Plane', 'Strawberry', 'ToeSegmentation1', 'ToeSegmentation2', 'Trace', 'TwoLeadECG', 'Wine', 'ChlorineConcentration', 'Symbols', 'Wafer']
 
@@ -118,21 +121,21 @@ class Context:
     def clear(self):
         self.configurations = pd.DataFrame()
 
+# Required to save state between widget interactions.
+import SessionState
+session_state = SessionState.get(configuration=Context())
 
-
-
+# Start of layout and flow.
 
 """# Time series classification data set to outlier data set assistant"""
-"""This tool assits one in transforming a binary or multiclass classifiaction data set such that it is usable in an anomlay detection task."""
-st.markdown("""A straightforward appraoch is to select a class as _normal_ and regard all other classes as outliers ([Emmott 2013](https://dl.acm.org/doi/abs/10.1145/2500853.2500858)).
-For a binary data set, we choose the majority class as normal class. For a multiclass data set, we choose the visually most distinct class.
+"""This tool assists one in transforming a binary or multiclass classification data set such that it is usable in an anomaly detection task."""
+st.markdown("""A straightforward approach is to select a class as _normal_ and regard all other classes as outliers ([Emmott 2013](https://dl.acm.org/doi/abs/10.1145/2500853.2500858)).
+For a binary data set, we choose the majority class as the normal class. For a multiclass data set, we choose the visually most distinct class.
 This creates diverse outliers.""")
 
 """The first section of the tool assists in choosing the normal and outlying classes. The second section summarizes the amount of normal and outlying time series."""
-import SessionState
 
-session_state = SessionState.get(configuration=Context())
-
+# Sidebar stuff.
 st.sidebar.markdown('1. Transformation')
 data_set_selection = st.sidebar.selectbox("Choose data set:", options=DATASETS)
 
@@ -141,13 +144,13 @@ display_data_set_selection = display_data_sets_placeholder.multiselect("Configur
 
 st.sidebar.markdown('___')
 st.sidebar.markdown('2. Summary')
-normal_data_ratio = st.sidebar.slider("Percentage of normal instances in train data?", min_value=0.1, max_value=1.,
+normal_data_ratio = st.sidebar.slider("Percentage of normal instances in train data.", min_value=0.1, max_value=1.,
                                       value=.8, step=0.05)
 
-outlier_ratio = st.sidebar.slider("Percentage outlier ratio in train data?", min_value=0.0, max_value=0.5,
+outlier_ratio = st.sidebar.slider("Percentage outlier ratio in train data.", min_value=0.0, max_value=0.5,
                                   value=.05, step=0.01)
 st.sidebar.markdown('___')
-if st.sidebar.button("Load example configuration"):
+if st.sidebar.button("Load example configuration", help="Loads a sample configuration for all data sets."):
     for data_set, normal, outliers in load_config():
         data_set_config = dict()
         data_set_config['normal_class'] = normal[0]
@@ -165,14 +168,14 @@ time_series, class_numbers, stats = get_classes_to_plot(load_dataset(data_set_se
 
 col1, col2 = st.beta_columns(2)
 with col1:
-    "Choose a data set from the sidepanel."
+    "Choose a data set from the side panel."
     st.line_chart(time_series.T)
 with col2:
     "Some stats for the displayed time series classes."
     st.table(stats)
     "Choose the normal class:"
     normal_class_selection = st.selectbox("", class_numbers)
-    if st.button('Add as normal class'):
+    if st.button('Add as normal class', help="Select the chosen class as the normal class and add it to the configuration."):
         data_set_config = dict()
         data_set_config['normal_class'] = normal_class_selection
         class_numbers.remove(normal_class_selection)
@@ -182,7 +185,7 @@ with col2:
         display_data_set_selection = display_data_sets_placeholder.multiselect("Configured data sets:", default=session_state.configuration.get_data_sets(), options=session_state.configuration.get_data_sets())
 
 "## 2. Summary"
-"Use the sliders in the sidepanel to regulate the normal and outlier ratios."
+"Use the sliders in the side panel to regulate the normal and outlier ratios."
 stats_df = pd.DataFrame()
 if len(display_data_set_selection) > 0:
     for data_set in display_data_set_selection:
