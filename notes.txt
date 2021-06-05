@@ -1,9 +1,0 @@
-
-https://udo.lubw.baden-wuerttemberg.de/public/api/processingChain?repositoryItemGlobalId=luftmessdaten.meros%3Ameros_z_luft_vergleich_parameter_nmc.sel&conditionValuesSetHash=D79BA7B&selector=luftmessdaten.meros%3Ameros_z_luft_vergleich_parameter_nmc.sel&sourceOrderAsc=false
-
-
-
-https://udo.lubw.baden-wuerttemberg.de/public/api/processingChain?repositoryItemGlobalId=luftmessdaten.meros%3Ameros_z_luft_messreihen_nmc.sel&conditionValuesSetHash=80E8910&selector=luftmessdaten.meros%3Ameros_z_luft_messreihen_nmc.sel&sourceOrderAsc=false
-
-
-https://udo.lubw.baden-wuerttemberg.de/public/api/processingChain?repositoryItemGlobalId=luftmessdaten.meros%3Ameros_z_luft_messreihen_nmc.sel&conditionValuesSetHash=80E8910&selector=luftmessdaten.meros%3Ameros_z_luft_messreihen_nmc.sel&sourceOrderAsc=false
