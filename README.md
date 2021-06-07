@@ -4,3 +4,6 @@ This is a simple tool that assists one in transforming a time series binary or m
 ## Demo
 See (Link)[Link] for a demo.
 
+## Impressions
+![Image of web app.](screen.png)
+
