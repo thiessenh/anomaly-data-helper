@@ -1,3 +1,5 @@
+# Credits to https://gist.github.com/tvst
+
 """Hack to add per-session state to Streamlit.
 
 Usage

@@ -1,0 +1,238 @@
+{
+    "ECG200": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            -1
+        ]
+    },
+    "ChlorineConcentration": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2,
+            3
+        ]
+    },
+    "GunPoint": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2
+        ]
+    },
+    "ECGFiveDays": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2
+        ]
+    },
+    "Wafer": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            -1
+        ]
+    },
+    "Adiac": {
+        "normal_class": 9.0,
+        "outlier_classes": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            22.0,
+            23.0,
+            24.0,
+            25.0,
+            26.0,
+            27.0,
+            28.0,
+            29.0,
+            30.0,
+            31.0,
+            32.0,
+            33.0,
+            34.0,
+            35.0,
+            36.0,
+            37.0
+        ]
+    },
+    "ArrowHead": {
+        "normal_class": 2.0,
+        "outlier_classes": [
+            0,
+            1
+        ]
+    },
+    "Beef": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    "BeetleFly": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2
+        ]
+    },
+    "BirdChicken": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2
+        ]
+    },
+    "CBF": {
+        "normal_class": 2.0,
+        "outlier_classes": [
+            1,
+            3
+        ]
+    },
+    "Coffee": {
+        "normal_class": 0.0,
+        "outlier_classes": [
+            1
+        ]
+    },
+    "FaceFour": {
+        "normal_class": 3.0,
+        "outlier_classes": [
+            1,
+            2,
+            4
+        ]
+    },
+    "Ham": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2
+        ]
+    },
+    "Herring": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2
+        ]
+    },
+    "Lightning2": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            -1
+        ]
+    },
+    "Lightning7": {
+        "normal_class": 3.0,
+        "outlier_classes": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+        ]
+    },
+    "Meat": {
+        "normal_class": 2.0,
+        "outlier_classes": [
+            1,
+            3
+        ]
+    },
+    "MedicalImages": {
+        "normal_class": 5.0,
+        "outlier_classes": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "MoteStrain": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2
+        ]
+    },
+    "Plane": {
+        "normal_class": 5.0,
+        "outlier_classes": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+        ]
+    },
+    "Strawberry": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2
+        ]
+    },
+    "ToeSegmentation1": {
+        "normal_class": 0.0,
+        "outlier_classes": [
+            1
+        ]
+    },
+    "ToeSegmentation2": {
+        "normal_class": 0.0,
+        "outlier_classes": [
+            1
+        ]
+    },
+    "Trace": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2,
+            3,
+            4
+        ]
+    },
+    "TwoLeadECG": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2
+        ]
+    },
+    "Wine": {
+        "normal_class": 1.0,
+        "outlier_classes": [
+            2
+        ]
+    },
+    "Symbols": {
+        "normal_class": 6.0,
+        "outlier_classes": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+}
