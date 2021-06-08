@@ -5,7 +5,7 @@ In the course of my master's thesis, I needed to transform a couple of data sets
 This is a simple tool that assists one in transforming a binary or multi class time series classification data set into an anomaly detection data set.
 
 ## Demo
-See (Link)[Link] for a demo.
+See (here)[https://share.streamlit.io/thiessenh/anomaly-data-helper/main/main.py] for a demo.
 
 ## Impressions
 ![Image of web app.](screen.png)
