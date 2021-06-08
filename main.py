@@ -39,7 +39,7 @@ st.sidebar.markdown('___')
 if st.sidebar.button("Load example configuration", help="Loads a sample configuration for all data sets."):
     for data_set, normal_label, outlier_labels in load_config():
         data_set_config = dict()
-        data_set_config['normal_class'] = normal_label[0]
+        data_set_config['normal_class'] = normal_label
         data_set_config['outlier_classes'] = outlier_labels
         data_set_config = pd.Series(data_set_config, name=data_set)
         session_state.configuration.append(data_set_config)
