@@ -83,8 +83,6 @@ def load_config():
         for name in data_file.keys():
             dataset_dict = data_file[name]
             normal_label = dataset_dict['normal_class']
-            if len(normal_label) == 0:
-                raise ValueError('dataset.json is invalid. Must contain at least one normal class label.')
             outlier_labels = dataset_dict['outlier_classes']
             if len(outlier_labels) == 0:
                 raise ValueError('dataset.json is invalid. Must contain at least one outlier class label.')
