@@ -78,7 +78,7 @@ def load_config():
     ValueError
         Raised when normal class value is not exactly one, or when no outlier labels provided.
     """
-    with open('datasets.json') as f:
+    with open('example_configuration.json') as f:
         data_file = json.load(f)
         for name in data_file.keys():
             dataset_dict = data_file[name]
