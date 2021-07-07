@@ -3,7 +3,7 @@ import pandas as pd
 from src import SessionState
 from src.utils import Context, load_config, load_dataset, get_data_set_info
 
-# To add more data sets, extend this list and add the files to data/ as well ass an entry to datasets.json.
+# To add more data sets, extend this list and add the files to data/ as well as an entry to datasets.json.
 DATASETS = ['ECG200', 'GunPoint', 'ECGFiveDays', 'Adiac', 'ArrowHead', 'Beef', 'BeetleFly', 'BirdChicken', 'CBF', 'Coffee', 'FaceFour', 'Ham', 'Herring', 'Lightning2', 'Lightning7', 'Meat', 'MedicalImages', 'MoteStrain', \
             'Plane', 'Strawberry', 'ToeSegmentation1', 'ToeSegmentation2', 'Trace', 'TwoLeadECG', 'Wine', 'ChlorineConcentration', 'Symbols', 'Wafer']
 
