@@ -23,7 +23,7 @@ This creates diverse outliers."""
 
 ## Sidebar section
 st.sidebar.markdown('1. Transformation')
-data_set_selection = st.sidebar.selectbox("Choose data set:", options=DATASETS)
+data_set_selection = st.sidebar.selectbox("Choose data set:", options=DATASETS, index=1)
 
 display_data_sets_placeholder = st.sidebar.empty()
 configured_data_sets = display_data_sets_placeholder.multiselect("Configured data sets:", default=session_state.configuration.get_data_sets(), options=session_state.configuration.get_data_sets())
